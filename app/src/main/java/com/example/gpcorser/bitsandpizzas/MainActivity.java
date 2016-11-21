@@ -142,6 +142,12 @@ public class MainActivity extends Activity {
             case 3:
                 fragment = new StoresFragment();
                 break;
+            case 4:
+                fragment = new Item1Fragment();
+                break;
+            case 5:
+                fragment = new Item2Fragment();
+                break;
             default:
                 fragment = new TopFragment();
                 break;

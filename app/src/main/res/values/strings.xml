@@ -25,9 +25,42 @@
         <item>Items</item>
         <item>Pasta</item>
         <item>Stores</item>
+        <item>CIS</item>
+        <item>CS</item>
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_item_detail">Item Detail</string>
     <string name="welcome_text">Here are just a few of our featured items</string>
+
+
+    <string-array name="item1">
+        <item>Overview</item>
+        <item>Year 1</item>
+        <item>Year 2</item>
+        <item>Year 3</item>
+        <item>Year 4</item>
+    </string-array>
+
+    <string-array name="item1Detail1"></string-array>
+
+
+    <string-array name="item1Detail2">
+        <item>MATH 103</item>
+        <item>COMM 105A</item>
+        <item>MATH 161</item>
+        <item>PHIL 205A (or 210B)</item>
+        <item>CS 105 (or CS 107A)</item>
+        <item>CS 146</item>
+        <item>CS 116</item>
+    </string-array>
+
+
+    <string-array name="item2">
+        <item>Overview</item>
+        <item>Year 1</item>
+        <item>Year 2</item>
+        <item>Year 3</item>
+        <item>Year 4</item>
+    </string-array>
 </resources>
