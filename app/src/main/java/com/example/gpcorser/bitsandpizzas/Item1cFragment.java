@@ -1,7 +1,7 @@
 package com.example.gpcorser.bitsandpizzas;
 
-import android.app.FragmentTransaction;
 import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,15 +10,16 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+//import android.support.v4.app.Fragment;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Item1Fragment extends Fragment {
+public class Item1cFragment extends Fragment {
 
     private ListView list;
     public int currentPosition = 0;
-    public Item1Fragment() {
+    public Item1cFragment() {
         // Required empty public constructor
     }
 
@@ -26,12 +27,15 @@ public class Item1Fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+         ArrayAdapter<String> listAdapter ;
 
-        View view = inflater.inflate(R.layout.fragment_item1, container, false);
+        View view = inflater.inflate(R.layout.fragment_item1b, container, false);
         list = (ListView)view.findViewById(R.id.list);
-        String[] titles = getResources().getStringArray(R.array.item1);
+
+        String[] titles = getResources().getStringArray(R.array.item1c);
         list.setAdapter(new ArrayAdapter<String>(getActivity(),
                 android.R.layout.simple_list_item_activated_1, titles));
+
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -47,25 +51,18 @@ public class Item1Fragment extends Fragment {
     }
 
 
-
     private void selectItem (int position) {
         currentPosition = position;
-        android.app.Fragment fragment;
+        Fragment fragment;
         switch(position) {
-            case 0:
-                fragment = new Item1aFragment();
-                break;
             case 1:
-                fragment = new Item1bFragment();
+                fragment = new ItemMaterialFragment();
                 break;
             case 2:
-                fragment = new Item1cFragment();
+                fragment = new PastaFragment();
                 break;
             case 3:
-                fragment = new Item1aFragment();
-                break;
-            case 4:
-                fragment = new Item1aFragment();
+                fragment = new StoresFragment();
                 break;
             default:
                 fragment = new TopFragment();
