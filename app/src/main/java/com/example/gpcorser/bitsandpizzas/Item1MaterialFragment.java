@@ -14,7 +14,7 @@ public class Item1MaterialFragment extends Fragment {
     public static final String[] items = {"Overview","Year 1","Year 2","Year 3","Year 4",};
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        RecyclerView pizzaRecycler = (RecyclerView) inflater.inflate(R.layout.fragment_iem1_material, container, false);
+        RecyclerView pizzaRecycler = (RecyclerView) inflater.inflate(R.layout.fragment_item1_material, container, false);
 
         String[] Categories = new String[items.length];
         for (int i = 0; i < Categories.length; i++) {
