@@ -27,6 +27,8 @@
         <item>Stores</item>
         <item>CIS</item>
         <item>CS</item>
+        <item>Faculty</item>
+        <item>Money Matters</item>
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -77,4 +79,46 @@
         <item>Year 3</item>
         <item>Year 4</item>
     </string-array>
+
+    <!-- NIK's Array's Faculty Related -->
+    <string-array name="item5names">
+        <item>Il-Hyung Cho</item>
+        <item>Frank Hall</item>
+        <item>Andrew Chubb</item>
+        <item>Moe Bidgoli</item>
+        <item>George Corser</item>
+        <item>Chad Dewey</item>
+        <item>Poonam Dharam</item>
+        <item>Scott James</item>
+        <item>Khandaker Abir Rahman</item>
+        <item>Richard Beyers</item>
+        <item>Jesse Grekowicz</item>
+        <item>Gregory McNish</item>
+        <item>Michael Stackhouse</item>
+        <item>Roger Yerion</item>
+        <item>Joan Zito</item>
+    </string-array>
+
+    <!-- NIK's Array's Faculty Related -->
+    <string-array name="item5pics">
+        <item>@drawable/cho</item>
+        <item>@drawable/hall</item>
+        <item>@drawable/chubb</item>
+        <item>@drawable/bidgoli</item>
+        <item>@drawable/corser</item>
+        <item>@drawable/nophoto</item>
+        <item>@drawable/dharam</item>
+        <item>@drawable/nophoto</item>
+        <item>@drawable/rahman</item>
+        <item>@drawable/beyers</item>
+        <item>@drawable/nophoto</item>
+        <item>@drawable/nophoto</item>
+        <item>@drawable/nophoto</item>
+        <item>@drawable/nophoto</item>
+        <item>@drawable/stackhouse</item>
+        <item>@drawable/nophoto</item>
+        <item>@drawable/nophoto</item>
+    </string-array>
+
+
 </resources>

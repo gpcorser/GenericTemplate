@@ -148,6 +148,8 @@ public class MainActivity extends Activity {
             case 5:
                 fragment = new Item2Fragment();
                 break;
+            case 6:
+                fragment = new Item5Fragment();
             default:
                 fragment = new TopFragment();
                 break;
