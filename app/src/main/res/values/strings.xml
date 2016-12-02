@@ -7,6 +7,10 @@
     <string name="open_drawer">Open Drawer</string>
     <string name="close_drawer">Close Drawer</string>
 
+    <color name="pale">#E9F1D4</color>
+    <color name="green">#257319</color>
+    <color name="black">#000000</color>
+
     <string-array name="items">
         <item>Diavolo</item>
         <item>Funghi</item>
@@ -27,6 +31,8 @@
         <item>Stores</item>
         <item>CIS</item>
         <item>CS</item>
+        <item>CS Transfer Credits</item>
+        <item>CIS Transfer Credits</item>
         <item>Faculty</item>
         <item>Money Matters</item>
     </string-array>
@@ -70,7 +76,6 @@
         <item>CS 146</item>
         <item>CS 116</item>
     </string-array>
-
 
     <string-array name="item2">
         <item>Overview</item>

@@ -32,6 +32,7 @@ public class MainActivity extends Activity {
         titles = getResources().getStringArray(R.array.titles);
         drawerList = (ListView)findViewById(R.id.drawer);
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
+        //Populate the ListView
         drawerList.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_activated_1, titles));
         drawerList.setOnItemClickListener(new DrawerListClickListener());
 
@@ -155,12 +156,14 @@ public class MainActivity extends Activity {
                 fragment = new TopFragment();
                 break;
         }
+        // Display the fragment using a fragment transaction
         FragmentTransaction ft = getFragmentManager().beginTransaction();
         ft.replace(R.id.content_frame, fragment, "visible_fragment");
         ft.addToBackStack(null);
         ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
         ft.commit();
 
+        //Set the action bar title
         setActionBarTitle(position);
 
         //close the drawer
@@ -175,6 +178,7 @@ public class MainActivity extends Activity {
         else
             title = titles[position];
 
+        //Display the title in the action bar
         getActionBar().setTitle(title);
     }
 
