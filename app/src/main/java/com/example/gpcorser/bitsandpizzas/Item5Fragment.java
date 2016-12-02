@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 /**
@@ -36,7 +35,7 @@ public class Item5Fragment extends ListFragment
             "Joan Zito"
     };
 
-    Integer[] imgid={
+    Integer[] imgID={
             R.drawable.cho,
             R.drawable.hall,
             R.drawable.chubb,
@@ -60,13 +59,18 @@ public class Item5Fragment extends ListFragment
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
     {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_item5, container, false);
+        Item5Adapter adapter = new Item5Adapter(getActivity(), itemName, imgID);
+        list = (ListView) view.findViewById(R.id.list);
+        list.setAdapter(adapter);
+
+        return view;
+
+       /* View view = inflater.inflate(R.layout.fragment_item5, container, false);
 
         itemName = getActivity().getResources().getStringArray(R.array.item5names);
         list = (ListView) getActivity().findViewById(R.id.list);
@@ -74,9 +78,10 @@ public class Item5Fragment extends ListFragment
         list.setAdapter(new ArrayAdapter<String>(getActivity().getApplicationContext(),
                 android.R.layout.simple_list_item_1, itemName));
 
-        return view;
+        return view;*/
 
-        //return inflater.inflate(R.layout.fragment_item5, container, false);
     }
 
+        //return inflater.inflate(R.layout.fragment_item5, container, false);*/
 }
+
