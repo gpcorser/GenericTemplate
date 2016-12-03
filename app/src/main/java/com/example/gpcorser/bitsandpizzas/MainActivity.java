@@ -132,6 +132,7 @@ public class MainActivity extends Activity {
     private void selectItem (int position) {
         currentPosition = position;
         Fragment fragment;
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
         switch(position) {
             case 1:
                 // fragment = new Fragment;
@@ -149,8 +150,16 @@ public class MainActivity extends Activity {
             case 5:
                 fragment = new Item2Fragment();
                 break;
-            case 6:
+            case 8:
+            {
                 fragment = new Item5Fragment();
+                transaction.replace(R.id.content_frame, fragment);
+                transaction.addToBackStack(null);
+                transaction.commit();
+                break;
+            }
+            case 9:
+                fragment = new Item6Fragment();
                 break;
             default:
                 fragment = new TopFragment();

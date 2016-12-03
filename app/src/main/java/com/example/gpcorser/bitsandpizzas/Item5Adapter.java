@@ -30,8 +30,8 @@ public class Item5Adapter extends ArrayAdapter<String>
 
     public View getView(int position,View view,ViewGroup parent)
     {
-        LayoutInflater inflater=context.getLayoutInflater();
-        View rowView=inflater.inflate(R.layout.item5list, null,true);
+        LayoutInflater inflater = context.getLayoutInflater();
+        View rowView = inflater.inflate(R.layout.item5list, null,true);
 
         TextView txtTitle = (TextView) rowView.findViewById(R.id.item);
         ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
@@ -41,7 +41,6 @@ public class Item5Adapter extends ArrayAdapter<String>
         imageView.setImageResource(imgID[position]);
         extratxt.setText("Description "+itemName[position]);
         return rowView;
-
     }
 
 }

@@ -1,6 +1,5 @@
 package com.example.gpcorser.bitsandpizzas;
 
-import android.app.ListFragment;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
@@ -64,24 +63,13 @@ public class Item5Fragment extends Fragment
                              Bundle savedInstanceState)
     {
         View view = inflater.inflate(R.layout.fragment_item5, container, false);
+
         Item5Adapter adapter = new Item5Adapter(getActivity(), itemName, imgID);
         list = (ListView) view.findViewById(R.id.list);
         list.setAdapter(adapter);
 
         return view;
 
-       /* View view = inflater.inflate(R.layout.fragment_item5, container, false);
-
-        itemName = getActivity().getResources().getStringArray(R.array.item5names);
-        list = (ListView) getActivity().findViewById(R.id.list);
-
-        list.setAdapter(new ArrayAdapter<String>(getActivity().getApplicationContext(),
-                android.R.layout.simple_list_item_1, itemName));
-
-        return view;*/
-
     }
-
-        //return inflater.inflate(R.layout.fragment_item5, container, false);*/
 }
 
