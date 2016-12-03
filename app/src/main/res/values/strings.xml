@@ -85,4 +85,9 @@
         <item>Year 4</item>
     </string-array>
 
+
+    <!-- Money Matters Page! -->
+    <string name="title">Undergraduate Students</string>
+    <string name="intro">These estimates are based on a total of 28 credits for two semesters for full-time students, 21 credits for two semesters for three quarter-time students, 14 credits for two semesters for part-time students and 7 credits for two semesters for less-than half-time students.</string>
+
 </resources>
