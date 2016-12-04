@@ -15,7 +15,7 @@
         android:background="@color/green"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:textSize="17sp"
+        android:textSize="17dp"
         android:layout_columnSpan="3"
         android:layout_row="0"
         />
@@ -29,76 +29,80 @@
         />
 
     <TextView
-        android:text="CST 217\n + EITHER \n CST 214 OR \n CST 216"
-        style="@style/courseGray1"
+        android:text="ACC 211"
+        android:textSize="17dp"
+        android:background="@color/gray"
+        android:layout_marginTop="5dp"
+        android:layout_column="0"
         android:layout_row="2"
         />
 
     <TextView
-        android:text="COM 202"
+        android:text="CST 217\n + EITHER \n CST 214 OR \n CST 216"
         style="@style/course1"
         android:layout_row="3"
         />
 
     <TextView
-        android:text="CST 133W"
+        android:text="COM 202"
         style="@style/courseGray1"
         android:layout_row="4"
         />
 
     <TextView
-        android:text="CST 183"
+        android:text="CST 133W"
         style="@style/course1"
         android:layout_row="5"
         />
 
     <TextView
-        android:text="CST 271"
+        android:text="CST 183"
         style="@style/courseGray1"
         android:layout_row="6"
         />
 
     <TextView
-        android:text="CST 283"
+        android:text="CST 271"
         style="@style/course1"
         android:layout_row="7"
         />
 
     <TextView
-        android:text="Sub MTH 209"
+        android:text="CST 283"
         style="@style/courseGray1"
         android:layout_row="8"
         />
 
     <TextView
-        android:text="Sub ENG 112"
+        android:text="Sub MTH 209"
         style="@style/course1"
         android:layout_row="9"
         />
 
     <TextView
-        android:text="MTH 119W"
+        android:text="ECN 221W"
         style="@style/courseGray1"
         android:layout_row="10"
         />
 
     <TextView
-        android:text="MTH 122W"
+        android:text="Sub ENG 112"
         style="@style/course1"
         android:layout_row="11"
         />
 
     <TextView
-        android:text="MTH 121 + 151"
+        android:text="MTH 119W"
         style="@style/courseGray1"
         android:layout_row="12"
         />
 
     <TextView
-        android:text="MTH 161"
+        android:text="MTH 120 + 160"
         style="@style/course1"
         android:layout_row="13"
         />
+
     <TextView
         android:text="PHIL 203W \nOR BOTH PHIL\n 207W + 210W"
         style="@style/courseGray1"
@@ -114,22 +118,22 @@
         android:layout_row="1" />
 
     <TextView
-        android:text="   3+ \nEITHER\n   2 OR\n   3"
-        android:textSize="17sp"
-        android:background="@color/gray"
-        android:layout_marginTop="5dp"
-        android:layout_column="2"
+        android:text="4"
+        android:textSize="17dp"
+        style="@style/creditsGray1"
         android:layout_row="2"
         />
 
     <TextView
-        android:text="3"
-        style="@style/credits1"
+        android:text="   3+ \nEITHER\n   2 OR\n   3"
+        android:textSize="17dp"
+        android:layout_marginTop="5dp"
+        android:layout_column="2"
         android:layout_row="3"
         />
 
     <TextView
-        android:text="4"
+        android:text="3"
         style="@style/creditsGray1"
         android:layout_row="4"
         />
@@ -141,13 +145,13 @@
         />
 
     <TextView
-        android:text="3"
+        android:text="4"
         style="@style/creditsGray1"
         android:layout_row="6"
         />
 
     <TextView
-        android:text="4"
+        android:text="3"
         style="@style/credits1"
         android:layout_row="7"
         />
@@ -159,7 +163,7 @@
         />
 
     <TextView
-        android:text="3"
+        android:text="5"
         style="@style/credits1"
         android:layout_row="9"
         />
@@ -171,19 +175,19 @@
         />
 
     <TextView
-        android:text="4"
+        android:text="3"
         style="@style/credits1"
         android:layout_row="11"
         />
 
     <TextView
-        android:text="3+4"
+        android:text="4"
         style="@style/creditsGray1"
         android:layout_row="12"
         />
 
     <TextView
-        android:text="4"
+        android:text="3+4"
         style="@style/credits1"
         android:layout_row="13"
         />
@@ -201,7 +205,7 @@
         android:textColor="@color/white"
         android:textStyle="bold"
         android:textAlignment="center"
-        android:textSize="17sp"
+        android:textSize="17dp"
         android:layout_marginLeft="15dp"
         android:layout_column="4"
         android:layout_columnSpan="3"
@@ -215,74 +219,75 @@
         style="@style/course2"
         android:layout_row="1"
         />
+
     <TextView
-        android:text="CIS 255"
+        android:text="ACCT 213"
         style="@style/courseGray2"
         android:layout_row="2"
         />
 
     <TextView
-        android:text="COMM 105A"
+        android:text="CIS 255"
         style="@style/course2"
         android:layout_row="3"
         />
 
     <TextView
-        android:text="CS 105"
+        android:text="COMM 105A"
         style="@style/courseGray2"
         android:layout_row="4"
         />
 
     <TextView
-        android:text="CS 116"
+        android:text="CS 105"
         style="@style/course2"
         android:layout_row="5"
         />
 
     <TextView
-        android:text="CS 146"
+        android:text="CS 116"
         style="@style/courseGray2"
         android:layout_row="6"
         />
 
     <TextView
-        android:text="CS 216"
+        android:text="CS 146"
         style="@style/course2"
         android:layout_row="7"
         />
 
     <TextView
-        android:text="CS 245"
+        android:text="CS 216"
         style="@style/courseGray2"
         android:layout_row="8"
         />
 
     <TextView
-        android:text="ENGL 212"
+        android:text="CS 245"
         style="@style/course2"
         android:layout_row="9"
         />
 
     <TextView
-        android:text="MATH 103"
+        android:text="ECON 221"
         style="@style/courseGray2"
         android:layout_row="10"
         />
 
     <TextView
-        android:text="MATH 120A"
+        android:text="ENGL 212"
         style="@style/course2"
         android:layout_row="11"
         />
 
     <TextView
-        android:text="MATH 140"
+        android:text="MATH 103"
         style="@style/courseGray2"
         android:layout_row="12"
         />
 
     <TextView
-        android:text="MATH 161"
+        android:text="MATH 120B"
         style="@style/course2"
         android:layout_row="13"
         />
@@ -352,7 +357,6 @@
     <TextView
         android:text="4"
         style="@style/creditsGray2"
-        android:layout_row="10"
         />
 
     <TextView
@@ -364,7 +368,6 @@
     <TextView
         android:text="4"
         style="@style/creditsGray2"
-        android:layout_row="12"
         />
 
     <TextView
@@ -380,3 +383,4 @@
         />
 
 </GridLayout>
+

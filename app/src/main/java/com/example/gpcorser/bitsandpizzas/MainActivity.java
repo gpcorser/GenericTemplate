@@ -150,6 +150,12 @@ public class MainActivity extends Activity {
             case 5:
                 fragment = new Item2Fragment();
                 break;
+            case 6:
+                fragment = new Item3Fragment();
+                break;
+            case 7:
+                fragment = new Item4Fragment();
+                break;
             case 8:
             {
                 fragment = new Item5Fragment();
