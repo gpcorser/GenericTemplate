@@ -34,7 +34,7 @@ public class Item5Adapter extends ArrayAdapter<String>
         View rowView = inflater.inflate(R.layout.item5list, null,true);
 
         TextView txtTitle = (TextView) rowView.findViewById(R.id.item);
-        ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
+        ImageView imageView = (ImageView) rowView.findViewById(R.id.image);
         TextView extratxt = (TextView) rowView.findViewById(R.id.textview1);
 
         txtTitle.setText(itemName[position]);
