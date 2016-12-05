@@ -16,20 +16,20 @@ public class Item1DetailActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_item_detail);
+        //setContentView(R.layout.fragment_item1_detail);
 
         // enable UP button
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
         // display details of the pizza
         int pizzaNo = (Integer)getIntent().getExtras().get(EXTRA_PIZZANO);
-        //String pizzaName = Item.pizzas[pizzaNo].getName();
-        //TextView textView = (TextView)findViewById(R.id.item_text);
-        //textView.setText(pizzaName);
-        //int pizzaImage = Item.pizzas[pizzaNo].getImageResourceId();
-        //ImageView imageView = (ImageView)findViewById(R.id.item_image);
-        //imageView.setImageDrawable(getResources().getDrawable(pizzaImage));
-        //imageView.setContentDescription(pizzaName);
+        String pizzaName = Item.pizzas[pizzaNo].getName();
+        TextView textView = (TextView)findViewById(R.id.item_text);
+        textView.setText(pizzaName);
+       // int pizzaImage = Item.pizzas[pizzaNo].getImageResourceId();
+       // ImageView imageView = (ImageView)findViewById(R.id.item_image);
+       // imageView.setImageDrawable(getResources().getDrawable(pizzaImage));
+       // imageView.setContentDescription(pizzaName);
     }
 
     @Override

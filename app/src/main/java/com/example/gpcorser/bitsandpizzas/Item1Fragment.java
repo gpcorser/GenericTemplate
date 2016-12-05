@@ -22,7 +22,6 @@ public class Item1Fragment extends Fragment {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -46,8 +45,6 @@ public class Item1Fragment extends Fragment {
         return view;
     }
 
-
-
     private void selectItem (int position) {
         currentPosition = position;
         android.app.Fragment fragment;
@@ -62,10 +59,10 @@ public class Item1Fragment extends Fragment {
                 fragment = new Item1cFragment();
                 break;
             case 3:
-                fragment = new Item1aFragment();
+                fragment = new Item1dFragment();
                 break;
             case 4:
-                fragment = new Item1aFragment();
+                fragment = new Item1eFragment();
                 break;
             default:
                 fragment = new TopFragment();
@@ -76,12 +73,6 @@ public class Item1Fragment extends Fragment {
         ft.addToBackStack(null);
         ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
         ft.commit();
-
-        //setActionBarTitle(position);
-
-        //close the drawer
-        //DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        //drawerLayout.closeDrawer(drawerList);
     }
 
 }

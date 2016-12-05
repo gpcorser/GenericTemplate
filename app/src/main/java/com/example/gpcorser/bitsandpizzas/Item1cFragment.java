@@ -54,31 +54,19 @@ public class Item1cFragment extends Fragment {
     private void selectItem (int position) {
         currentPosition = position;
         Fragment fragment;
-        switch(position) {
-            case 1:
-                fragment = new ItemMaterialFragment();
-                break;
-            case 2:
-                fragment = new PastaFragment();
-                break;
-            case 3:
-                fragment = new StoresFragment();
-                break;
-            default:
-                fragment = new TopFragment();
-                break;
-        }
+
+        fragment = new Item1DetailFragment();
+        String val =(String) list.getItemAtPosition(position);
+
         FragmentTransaction ft = getFragmentManager().beginTransaction();
-        ft.replace(R.id.content_frame, fragment, "visible_fragment");
         ft.addToBackStack(null);
         ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+        Bundle args = new Bundle();
+        args.putString("VALUE", val);
+        fragment.setArguments(args);
+        ft.replace(R.id.content_frame, fragment, "visible_fragment");
         ft.commit();
 
-        //setActionBarTitle(position);
-
-        //close the drawer
-        //DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        //drawerLayout.closeDrawer(drawerList);
     }
 
 }
