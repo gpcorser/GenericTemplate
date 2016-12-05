@@ -24,15 +24,14 @@ public class Item2DetailFragment extends Fragment {
         String detailText1 = getArguments().getString("VALUE");
         String detailText2 = "Class info not found";
         String detailText3 = "";
-        int test = Item1.items[0].getLength();
         boolean found = false;
 
         int i = 0;
-        while (i < Item1.items[0].getLength() && found != true) {
-                if (Item1.items[i].getName().equals(detailText1)){
+        while (i < Item2.items[0].getLength() && found != true) {
+                if (Item2.items[i].getName().equals(detailText1)){
                     found = true;
                     detailText2 = Item1.items[i].getDescription();
-                    detailText3 = Item1.items[i].getPrerequisite();
+                    detailText3 = "Prerequisites: " + (Item1.items[i].getPrerequisite());
                 }
                 i++;
             }

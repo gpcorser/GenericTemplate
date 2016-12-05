@@ -34,7 +34,7 @@ public class Item1DetailFragment extends Fragment {
                 if (Item1.items[i].getName().equals(detailText1)){
                     found = true;
                     detailText2 = Item1.items[i].getDescription();
-                    detailText3 = Item1.items[i].getPrerequisite();
+                    detailText3 = "Prerequisites: " + (Item1.items[i].getPrerequisite());
                 }
                 i++;
             }

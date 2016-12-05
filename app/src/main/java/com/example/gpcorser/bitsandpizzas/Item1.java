@@ -11,8 +11,19 @@ public class Item1 {
 
     public static final Item1[] items = {
             new Item1("MATH 103", "test1", "class1"),
-            new Item1("COMM 105A", "test2", "class2"),
-            new Item1("MATH 161", "test3", "class3"),
+            new Item1("COMM 105A", "Provides the student with " +
+                    "basic theory and practice in person-to-person, " +
+                    "small group, and public speaking communication " +
+                    "processes. Examines characteristics of communicator " +
+                    "behavior with communication in relationships as the " +
+                    "basic model; message transmission/reception; effects of " +
+                    "communication.", "None"),
+            new Item1("MATH 120B", "In MATH 120B, students study equations and inequalities, " +
+                    "functions, systems of equations, linear programming including the simplex " +
+                    "method, quadratic functions, exponential and logarithmic functions, " +
+                    "mathematics of finance, introductions to differential calculus including " +
+                    "derivatives and applications. The course emphasizes applications from " +
+                    "business and economics.", "MATH 103 or satisfactory score on math placement test."),
             new Item1("PHIL 205A (or 210B)", "test4", "class4"),
             new Item1("CS 105 (or CS 107A)", "test5", "class5"),
             new Item1("CS 146", "test6", "class6"),
