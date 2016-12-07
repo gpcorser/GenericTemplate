@@ -12,51 +12,51 @@
 
     <!-- Delta Course Theme -->
     <style name="courseGray1" >
-        <item name="android:textSize">17sp</item>
+        <item name="android:textSize">15sp</item>
         <item name="android:background">@color/gray</item>
-        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginTop">5sp</item>
         <item name="android:layout_column">0</item>
     </style>
 
     <style name="course1" >
-        <item name="android:textSize">17sp</item>
-        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginTop">5sp</item>
         <item name="android:layout_column">0</item>
     </style>
 
     <style name="creditsGray1" >
-        <item name="android:textSize">17sp</item>
+        <item name="android:textSize">15sp</item>
         <item name="android:background">@color/gray</item>
-        <item name="android:layout_marginTop">5dp</item>
-        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginTop">5sp</item>
+        <item name="android:layout_marginLeft">15sp</item>
         <item name="android:layout_column">2</item>
     </style>
 
     <style name="credits1" >
-        <item name="android:textSize">17sp</item>
-        <item name="android:layout_marginTop">5dp</item>
-        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginTop">5sp</item>
+        <item name="android:layout_marginLeft">15sp</item>
         <item name="android:layout_column">2</item>
     </style>
 
     <!-- SVSU Course Theme -->
     <style name="courseGray2" >
-        <item name="android:textSize">17sp</item>
+        <item name="android:textSize">15sp</item>
         <item name="android:background">@color/gray</item>
         <item name="android:layout_marginTop">5dp</item>
-        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginLeft">15sp</item>
         <item name="android:layout_column">4</item>
     </style>
 
     <style name="course2" >
-        <item name="android:textSize">17sp</item>
-        <item name="android:layout_marginTop">5dp</item>
-        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginTop">5sp</item>
+        <item name="android:layout_marginLeft">15sp</item>
         <item name="android:layout_column">4</item>
     </style>
 
     <style name="creditsGray2" >
-        <item name="android:textSize">17sp</item>
+        <item name="android:textSize">15sp</item>
         <item name="android:background">@color/gray</item>
         <item name="android:layout_marginTop">5dp</item>
         <item name="android:layout_marginLeft">15dp</item>
@@ -64,9 +64,9 @@
     </style>
 
     <style name="credits2" >
-        <item name="android:textSize">17sp</item>
-        <item name="android:layout_marginTop">5dp</item>
-        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginTop">5sp</item>
+        <item name="android:layout_marginLeft">15sp</item>
         <item name="android:layout_column">5</item>
     </style>
 </resources>

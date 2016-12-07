@@ -1,386 +1,383 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     android:columnCount="8"
     android:rowCount="15">
 
-    <!-- ________Delta College Courses________ -->
-    <TextView
-        android:text="Delta College Courses"
-        android:background="@color/green"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:textSize="17dp"
-        android:layout_columnSpan="3"
-        android:layout_row="0"
-        />
+    <GridLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <!-- _____Course No. Column_____ -->
-    <TextView
-        android:text="Course No."
-        android:textStyle="bold"
-        style="@style/course1"
-        android:layout_row="1"
-        />
 
-    <TextView
-        android:text="ACC 211"
-        android:textSize="17dp"
-        android:background="@color/gray"
-        android:layout_marginTop="5dp"
-        android:layout_column="0"
-        android:layout_row="2"
-        />
+        <!-- ________Delta College Courses________ -->
+        <TextView
+            android:text="Delta Courses"
+            android:background="@color/green"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_columnSpan="3"
+            android:layout_row="0"
+            />
 
-    <TextView
-        android:text="CST 217\n + EITHER \n CST 214 OR \n CST 216"
-        style="@style/course1"
-        android:layout_row="3"
-        />
+        <!-- _____Course No. Column_____ -->
+        <TextView
+            android:text="Course No."
+            android:textStyle="bold"
+            style="@style/course1"
+            android:layout_row="1"
+            />
 
-    <TextView
-        android:text="COM 202"
-        style="@style/courseGray1"
-        android:layout_row="4"
-        />
+        <TextView
+            android:text="ACC 211"
+            style="@style/course1"
+            android:layout_row="2"
+            />
 
-    <TextView
-        android:text="CST 133W"
-        style="@style/course1"
-        android:layout_row="5"
-        />
+        <TextView
+            android:text="CST 217\n + EITHER \n CST 214 OR \n CST 216"
+            style="@style/course1"
+            android:layout_row="3"
+            />
 
-    <TextView
-        android:text="CST 183"
-        style="@style/courseGray1"
-        android:layout_row="6"
-        />
+        <TextView
+            android:text="COM 202"
+            style="@style/courseGray1"
+            android:layout_row="4"
+            />
 
-    <TextView
-        android:text="CST 271"
-        style="@style/course1"
-        android:layout_row="7"
-        />
+        <TextView
+            android:text="CST 133W"
+            style="@style/course1"
+            android:layout_row="5"
+            />
 
-    <TextView
-        android:text="CST 283"
-        style="@style/courseGray1"
-        android:layout_row="8"
-        />
+        <TextView
+            android:text="CST 183"
+            style="@style/courseGray1"
+            android:layout_row="6"
+            />
 
-    <TextView
-        android:text="Sub MTH 209"
-        style="@style/course1"
-        android:layout_row="9"
-        />
+        <TextView
+            android:text="CST 271"
+            style="@style/course1"
+            android:layout_row="7"
+            />
 
-    <TextView
-        android:text="ECN 221W"
-        style="@style/courseGray1"
-        android:layout_row="10"
-        />
+        <TextView
+            android:text="CST 283"
+            style="@style/courseGray1"
+            android:layout_row="8"
+            />
 
-    <TextView
-        android:text="Sub ENG 112"
-        style="@style/course1"
-        android:layout_row="11"
-        />
+        <TextView
+            android:text="Sub MTH 209"
+            style="@style/course1"
+            android:layout_row="9"
+            />
 
-    <TextView
-        android:text="MTH 119W"
-        style="@style/courseGray1"
-        android:layout_row="12"
-        />
+        <TextView
+            android:text="ECN 221W"
+            style="@style/courseGray1"
+            android:layout_row="10"
+            />
 
-    <TextView
-        android:text="MTH 120 + 160"
-        style="@style/course1"
-        android:layout_row="13"
-        />
+        <TextView
+            android:text="Sub ENG 112"
+            style="@style/course1"
+            android:layout_row="11"
+            />
 
-    <TextView
-        android:text="PHIL 203W \nOR BOTH PHIL\n 207W + 210W"
-        style="@style/courseGray1"
-        android:layout_row="14"
-        />
+        <TextView
+            android:text="MTH 119W"
+            style="@style/courseGray1"
+            android:layout_row="12"
+            />
 
-    <!-- ___________ Cr Column _____________ -->
+        <TextView
+            android:text="MTH 120 + 160"
+            style="@style/course1"
+            android:layout_row="13"
+            />
 
-    <TextView
-        android:text="Cr"
-        android:textStyle="bold"
-        style="@style/credits1"
-        android:layout_row="1" />
+        <TextView
+            android:text="PHIL 203W \nOR BOTH PHIL\n 207W + 210W"
+            style="@style/courseGray1"
+            android:layout_row="14"
+            />
 
-    <TextView
-        android:text="4"
-        android:textSize="17dp"
-        style="@style/creditsGray1"
-        android:layout_row="2"
-        />
+        <!-- ___________ Cr Column _____________ -->
 
-    <TextView
-        android:text="   3+ \nEITHER\n   2 OR\n   3"
-        android:textSize="17dp"
-        android:layout_marginTop="5dp"
-        android:layout_column="2"
-        android:layout_row="3"
-        />
+        <TextView
+            android:text="Cr"
+            android:textStyle="bold"
+            style="@style/credits1"
+            android:layout_row="1" />
 
-    <TextView
-        android:text="3"
-        style="@style/creditsGray1"
-        android:layout_row="4"
-        />
+        <TextView
+            android:text="4"
+            style="@style/creditsGray1"
+            android:layout_row="2"
+            />
 
-    <TextView
-        android:text="4"
-        style="@style/credits1"
-        android:layout_row="5"
-        />
+        <TextView
+            android:text="   3+ \nEITHER\n   2 OR\n   3"
+            android:textSize="17sp"
+            android:layout_marginTop="5sp"
+            android:layout_column="2"
+            android:layout_row="3"
+            />
 
-    <TextView
-        android:text="4"
-        style="@style/creditsGray1"
-        android:layout_row="6"
-        />
+        <TextView
+            android:text="3"
+            style="@style/creditsGray1"
+            android:layout_row="4"
+            />
 
-    <TextView
-        android:text="3"
-        style="@style/credits1"
-        android:layout_row="7"
-        />
+        <TextView
+            android:text="4"
+            style="@style/credits1"
+            android:layout_row="5"
+            />
 
-    <TextView
-        android:text="4"
-        style="@style/creditsGray1"
-        android:layout_row="8"
-        />
+        <TextView
+            android:text="4"
+            style="@style/creditsGray1"
+            android:layout_row="6"
+            />
 
-    <TextView
-        android:text="5"
-        style="@style/credits1"
-        android:layout_row="9"
-        />
+        <TextView
+            android:text="3"
+            style="@style/credits1"
+            android:layout_row="7"
+            />
 
-    <TextView
-        android:text="4"
-        style="@style/creditsGray1"
-        android:layout_row="10"
-        />
+        <TextView
+            android:text="4"
+            style="@style/creditsGray1"
+            android:layout_row="8"
+            />
 
-    <TextView
-        android:text="3"
-        style="@style/credits1"
-        android:layout_row="11"
-        />
+        <TextView
+            android:text="5"
+            style="@style/credits1"
+            android:layout_row="9"
+            />
 
-    <TextView
-        android:text="4"
-        style="@style/creditsGray1"
-        android:layout_row="12"
-        />
+        <TextView
+            android:text="4"
+            style="@style/creditsGray1"
+            android:layout_row="10"
+            />
 
-    <TextView
-        android:text="3+4"
-        style="@style/credits1"
-        android:layout_row="13"
-        />
+        <TextView
+            android:text="3"
+            style="@style/credits1"
+            android:layout_row="11"
+            />
 
-    <TextView
-        android:text="3 OR\n1+2"
-        style="@style/creditsGray1"
-        android:layout_row="14"
-        />
+        <TextView
+            android:text="4"
+            style="@style/creditsGray1"
+            android:layout_row="12"
+            />
 
-    <!-- ________SVSU Courses________ -->
-    <TextView
-        android:text="Saginaw Valley Courses"
-        android:background="@color/red"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:textSize="17dp"
-        android:layout_marginLeft="15dp"
-        android:layout_column="4"
-        android:layout_columnSpan="3"
-        android:layout_row="0"
-        />
+        <TextView
+            android:text="3+4"
+            style="@style/credits1"
+            android:layout_row="13"
+            />
 
-    <!-- _____Course No. Column_____ -->
-    <TextView
-        android:text="Course No."
-        android:textStyle="bold"
-        style="@style/course2"
-        android:layout_row="1"
-        />
+        <TextView
+            android:text="3 OR\n1+2"
+            style="@style/creditsGray1"
+            android:layout_row="14"
+            />
 
-    <TextView
-        android:text="ACCT 213"
-        style="@style/courseGray2"
-        android:layout_row="2"
-        />
+        <!-- ________SVSU Courses________ -->
+        <TextView
+            android:text="SVSU Courses"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:layout_marginLeft="15sp"
+            android:layout_column="4"
+            android:layout_columnSpan="3"
+            android:layout_row="0"
+            />
 
-    <TextView
-        android:text="CIS 255"
-        style="@style/course2"
-        android:layout_row="3"
-        />
+        <!-- _____Course No. Column_____ -->
+        <TextView
+            android:text="Course No."
+            android:textStyle="bold"
+            style="@style/course2"
+            android:layout_row="1"
+            />
 
-    <TextView
-        android:text="COMM 105A"
-        style="@style/courseGray2"
-        android:layout_row="4"
-        />
+        <TextView
+            android:text="ACCT 213"
+            style="@style/courseGray2"
+            android:layout_row="2"
+            />
 
-    <TextView
-        android:text="CS 105"
-        style="@style/course2"
-        android:layout_row="5"
-        />
+        <TextView
+            android:text="CIS 255"
+            style="@style/course2"
+            android:layout_row="3"
+            />
 
-    <TextView
-        android:text="CS 116"
-        style="@style/courseGray2"
-        android:layout_row="6"
-        />
+        <TextView
+            android:text="COMM 105A"
+            style="@style/courseGray2"
+            android:layout_row="4"
+            />
 
-    <TextView
-        android:text="CS 146"
-        style="@style/course2"
-        android:layout_row="7"
-        />
+        <TextView
+            android:text="CS 105"
+            style="@style/course2"
+            android:layout_row="5"
+            />
 
-    <TextView
-        android:text="CS 216"
-        style="@style/courseGray2"
-        android:layout_row="8"
-        />
+        <TextView
+            android:text="CS 116"
+            style="@style/courseGray2"
+            android:layout_row="6"
+            />
 
-    <TextView
-        android:text="CS 245"
-        style="@style/course2"
-        android:layout_row="9"
-        />
+        <TextView
+            android:text="CS 146"
+            style="@style/course2"
+            android:layout_row="7"
+            />
 
-    <TextView
-        android:text="ECON 221"
-        style="@style/courseGray2"
-        android:layout_row="10"
-        />
+        <TextView
+            android:text="CS 216"
+            style="@style/courseGray2"
+            android:layout_row="8"
+            />
 
-    <TextView
-        android:text="ENGL 212"
-        style="@style/course2"
-        android:layout_row="11"
-        />
+        <TextView
+            android:text="CS 245"
+            style="@style/course2"
+            android:layout_row="9"
+            />
 
-    <TextView
-        android:text="MATH 103"
-        style="@style/courseGray2"
-        android:layout_row="12"
-        />
+        <TextView
+            android:text="ECON 221"
+            style="@style/courseGray2"
+            android:layout_row="10"
+            />
 
-    <TextView
-        android:text="MATH 120B"
-        style="@style/course2"
-        android:layout_row="13"
-        />
+        <TextView
+            android:text="ENGL 212"
+            style="@style/course2"
+            android:layout_row="11"
+            />
 
-    <TextView
-        android:text="PHIL 205A \nOR PHIL 210B"
-        style="@style/courseGray2"
-        android:layout_row="14"
-        />
+        <TextView
+            android:text="MATH 103"
+            style="@style/courseGray2"
+            android:layout_row="12"
+            />
 
-    <!-- ___________ Cr Column _____________ -->
+        <TextView
+            android:text="MATH 120B"
+            style="@style/course2"
+            android:layout_row="13"
+            />
 
-    <TextView
-        android:text="Cr"
-        android:textStyle="bold"
-        style="@style/credits2"
-        android:layout_row="1" />
+        <TextView
+            android:text="PHIL 205A \nOR PHIL 210B"
+            style="@style/courseGray2"
+            android:layout_row="14"
+            />
 
-    <TextView
-        android:text="4"
-        style="@style/creditsGray2"
-        android:layout_row="2"
-        />
+        <!-- ___________ Cr Column _____________ -->
 
-    <TextView
-        android:text="3"
-        style="@style/credits2"
-        android:layout_row="3"
-        />
+        <TextView
+            android:text="Cr"
+            android:textStyle="bold"
+            style="@style/credits2"
+            android:layout_row="1" />
 
-    <TextView
-        android:text="4"
-        style="@style/creditsGray2"
-        android:layout_row="4"
-        />
+        <TextView
+            android:text="4"
+            style="@style/creditsGray2"
+            android:layout_row="2"
+            />
 
-    <TextView
-        android:text="4"
-        style="@style/credits2"
-        android:layout_row="5"
-        />
+        <TextView
+            android:text="3"
+            style="@style/credits2"
+            android:layout_row="3"
+            />
 
-    <TextView
-        android:text="3"
-        style="@style/creditsGray2"
-        android:layout_row="6"
-        />
+        <TextView
+            android:text="4"
+            style="@style/creditsGray2"
+            android:layout_row="4"
+            />
 
-    <TextView
-        android:text="4"
-        style="@style/credits2"
-        android:layout_row="7"
-        />
+        <TextView
+            android:text="4"
+            style="@style/credits2"
+            android:layout_row="5"
+            />
 
-    <TextView
-        android:text="4"
-        style="@style/creditsGray2"
-        android:layout_row="8"
-        />
+        <TextView
+            android:text="3"
+            style="@style/creditsGray2"
+            android:layout_row="6"
+            />
 
-    <TextView
-        android:text=""
-        style="@style/credits2"
-        android:layout_row="9"
-        />
+        <TextView
+            android:text="4"
+            style="@style/credits2"
+            android:layout_row="7"
+            />
 
-    <TextView
-        android:text="4"
-        style="@style/creditsGray2"
-        />
+        <TextView
+            android:text="4"
+            style="@style/creditsGray2"
+            android:layout_row="8"
+            />
 
-    <TextView
-        android:text="4"
-        style="@style/credits2"
-        android:layout_row="11"
-        />
+        <TextView
+            android:text=""
+            style="@style/credits2"
+            android:layout_row="9"
+            />
 
-    <TextView
-        android:text="4"
-        style="@style/creditsGray2"
-        />
+        <TextView
+            android:text="4"
+            style="@style/creditsGray2"
+            />
 
-    <TextView
-        android:text="4"
-        style="@style/credits2"
-        android:layout_row="13"
-        />
+        <TextView
+            android:text="4"
+            style="@style/credits2"
+            android:layout_row="11"
+            />
 
-    <TextView
-        android:text="3"
-        style="@style/creditsGray2"
-        android:layout_row="14"
-        />
+        <TextView
+            android:text="4"
+            style="@style/creditsGray2"
+            />
 
-</GridLayout>
+        <TextView
+            android:text="4"
+            style="@style/credits2"
+            android:layout_row="13"
+            />
+
+        <TextView
+            android:text="3"
+            style="@style/creditsGray2"
+            android:layout_row="14"
+            />
+    </GridLayout>
+
+</ScrollView>
 
