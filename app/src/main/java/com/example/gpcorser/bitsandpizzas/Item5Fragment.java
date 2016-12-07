@@ -94,6 +94,26 @@ public class Item5Fragment extends Fragment
             "989-964-4050"
     };
 
+/*    String[] itemRate ={
+            "Professor Rating: 2.5 | 55 Ratings",
+            "Professor Rating: N/A | 00 Ratings",
+            "Professor Rating: 3.4 | 43 Ratings",
+            "Professor Rating: 3.3 | 88 Ratings",
+            "Professor Rating: 4.4 | 11 Ratings",
+            "Professor Rating: 4.6 | 08 Ratings",
+            "Professor Rating: N/A | 00 Ratings",
+            "Professor Rating: 4.9 | 40 Ratings",
+            "Professor Rating: 4.5 | 11 Ratings",
+            "Professor Rating: 1.0 | 01 Ratings",
+            "Professor Rating: N/A | 00 Ratings",
+            "Professor Rating: N/A | 00 Ratings",
+            "Professor Rating: 4.2 | 19 Ratings",
+            "Professor Rating: 3.0 | 02 Ratings",
+            "Professor Rating: 4.3 | 11 Ratings",
+            "Professor Rating: 3.8 | 06 Ratings",
+            "Professor Rating: N/A | 00 Ratings"
+    };*/
+
     public Item5Fragment() {
         // Required empty public constructor
     }
@@ -105,6 +125,7 @@ public class Item5Fragment extends Fragment
         View view = inflater.inflate(R.layout.fragment_item5, container, false);
 
         Item5Adapter adapter = new Item5Adapter(getActivity(), itemName, imgID, itemDesc, itemContact);
+                                                //,itemRate
         list = (ListView) view.findViewById(R.id.list);
         list.setAdapter(adapter);
 

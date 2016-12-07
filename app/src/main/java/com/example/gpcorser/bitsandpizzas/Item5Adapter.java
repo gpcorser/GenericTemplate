@@ -21,9 +21,10 @@ public class Item5Adapter extends ArrayAdapter<String>
     private final Integer[] imgID;
     private final String[] itemDesc;
     private final String[] itemContact;
+    //private final String[] itemRate;
 
     public Item5Adapter(Activity context, String[] itemName, Integer[] imgID, String[] itemDesc,
-                        String[] itemContact)
+                        String[] itemContact) //,String[] itemRate)
     {
         super(context, R.layout.item5list, itemName);
         // TODO Auto-generated constructor stub
@@ -33,6 +34,7 @@ public class Item5Adapter extends ArrayAdapter<String>
         this.imgID=imgID;
         this.itemDesc=itemDesc;
         this.itemContact=itemContact;
+        //this.itemRate=itemRate;
     }
 
     public View getView(int position,View view,ViewGroup parent)
@@ -44,11 +46,13 @@ public class Item5Adapter extends ArrayAdapter<String>
         ImageView imageView = (ImageView) rowView.findViewById(R.id.image);
         TextView extratxt = (TextView) rowView.findViewById(R.id.textview1);
         TextView extratxt2 = (TextView) rowView.findViewById(R.id.textview2);
+        //TextView extratxt3 = (TextView) rowView.findViewById(R.id.textview3);
 
         txtTitle.setText(itemName[position]);
         imageView.setImageResource(imgID[position]);
         extratxt.setText(itemDesc[position]);
         extratxt2.setText(itemContact[position]);
+        //extratxt3.setText(itemRate[position]);
         return rowView;
     }
 
