@@ -159,9 +159,9 @@ public class MainActivity extends Activity {
             case 8:
             {
                 fragment = new Item5Fragment();
-                transaction.replace(R.id.content_frame, fragment);
+/*                transaction.replace(R.id.content_frame, fragment);
                 transaction.addToBackStack(null);
-                transaction.commit();
+                transaction.commit();*/
                 break;
             }
             case 9:
